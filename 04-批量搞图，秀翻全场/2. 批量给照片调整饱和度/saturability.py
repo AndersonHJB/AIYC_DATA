@@ -2,7 +2,7 @@
 # @Author: AI悦创
 # @Date:   2021-10-04 21:25:28
 # @Last Modified by:   aiyc
-# @Last Modified time: 2021-10-04 21:28:04
+# @Last Modified time: 2021-10-04 21:30:12
 import cv2
 import numpy as np
 import os
@@ -20,3 +20,10 @@ root, dirs, files = next(os.walk("tips_3/"))
 for item in files:
 	file_path = os.path.join(root,item)
 	process_image(file_path, "tips_3_sa")
+
+def mkdirs(self):
+		if not os.path.exists(self.output_dir):
+			os.makedirs(self.output_dir)
+			print(f"文件夹 {self.output_dir} 已经自动为你创建，图片将保存到：{self.output_dir}")
+		else:
+			print(f"文件夹 {self.output_dir} 已经存在，图片将保存到：{self.output_dir}")
