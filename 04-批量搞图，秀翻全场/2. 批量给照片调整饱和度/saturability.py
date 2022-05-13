@@ -2,7 +2,7 @@
 # @Author: AI悦创
 # @Date:   2021-10-04 21:25:28
 # @Last Modified by:   aiyc
-# @Last Modified time: 2021-12-14 11:48:24
+# @Last Modified time: 2021-12-14 12:09:49
 import cv2
 import numpy as np
 import os
@@ -22,3 +22,5 @@ for item in files:
 	file_path = os.path.join(root, item)
 	# print(file_path)
 	process_image(file_path, "./tips_3_sa/")
+
+
